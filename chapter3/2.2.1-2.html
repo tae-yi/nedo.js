@@ -1,0 +1,13 @@
+
+<!-- ch02/2.2.1-2.html -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    axios.get('https://www.zerocho.com/api/get') // Promise
+    .then((result) => {
+        console.log(result);
+        console.log(result.data); // {}
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+</script>
